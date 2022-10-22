@@ -1,0 +1,16 @@
+@import "../../Style/index.scss";
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+
+  .cardList {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+
+    // flex-wrap: wrap;
+    // gap: 20px;
+    // align-items: center;
+    // justify-content: center;
+  }
+}

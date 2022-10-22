@@ -1,0 +1,49 @@
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+  .paginationContainer > button {
+    display: inline-block;
+    color: rgb(36, 60, 38);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    text-align: center;
+
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   justify-content: center;
+    //   margin-top: 15px;
+    //   .inactive {
+    //     padding: 10px 18px;
+    //     color: rgb(117, 52, 34);
+    //     width: 40px;
+    //     height: 40px;
+    //     line-height: 40px;
+    //     padding: 0;
+    //     text-align: center;
+    //   }
+
+    //   .active {
+    //     background-color: rgb(117, 52, 34);
+    //     border-radius: 100%;
+    //     color: #fff;
+    //   }
+  }
+  button.active {
+    background-color: rgb(36, 60, 38);
+    border-radius: 100%;
+    color: #fff;
+  }
+}
