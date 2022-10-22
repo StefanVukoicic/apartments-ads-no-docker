@@ -1,6 +1,6 @@
 Quickstart guide:
 
-In order to start the project, run "npm i" while cd'd into apartments-full-app (where the readme is), then cd into /full-app/apartment-ads and /full-app/api-server and repeat the process.
+In order to start the project, run "npm i" while cd'd into apartments-ads-no-docker (where the readme is), then cd into /full-app/apartment-ads and /full-app/api-server and repeat the process.
 
 You will also need to create an empty postgres database.
 
@@ -16,7 +16,7 @@ This is currently the default way, as the code to run the scraper in '/full-app/
 
 If you want to proceed running the app this way, then also cd into /Scraper and run the command "npm i", then create the same .env file you created in /full-app/api-server with the same url to the DB, then run "npm run dev" and wait for the scraper to finish. You will get a message in the console saying "Done!" when it is complete.
 
-You can then cd back into apartments-full-app (where this readme is) and simply run "npm start" to concurrently run the front and back-end, in which case the apartment ads should load near instantly.
+You can then cd back into apartments-ads-no-docker (where this readme is) and simply run "npm start" to concurrently run the front and back-end, in which case the apartment ads should load near instantly.
 
 2. With the scraper running when the API is called
 
