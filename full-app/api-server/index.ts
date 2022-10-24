@@ -3,14 +3,14 @@ import * as trpcExpress from "@trpc/server/adapters/express";
 import cors from "cors";
 import express from "express";
 import { prisma } from "./db/client";
-import { scraper } from "./script";
+// import { scraper } from "./script";
 
 const appRouter = trpc.router().query("database", {
   async resolve() {
-    const rowNumber = await prisma.apartment_ads.count();
-    if (!rowNumber) {
-      await scraper();
-    }
+    // const rowNumber = await prisma.apartment_ads.count();
+    // if (!rowNumber) {
+    //   await scraper();
+    // }
     const allAds = await prisma.apartment_ads.findMany();
     return allAds;
   },
